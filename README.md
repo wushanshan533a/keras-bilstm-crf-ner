@@ -1,4 +1,4 @@
-# 基于keras+Bilstm+softmax/crf的中文命名实体识别
+# 基于keras+Bilstm+crf的中文命名实体识别
 这是一个基于keras+Bilstm+crf的中文命名实体识别练习，主要是理解命名实体识别的做法以及bilstm,crf层。bilstm对于捕捉序列数据的长依
 赖非常有效，而crf层主要是去学习实体间的状态依赖关系，学习到隐状态间的转移概率，拿BIO数据集来说，一个实体一定是BIIII..这种结构，不存在IIII这
 种结构，也不存在BOIIIII这种结构，crf会学习到B之后只能接I,I的最前面必须有B.这是softmax层所学习不到的。
